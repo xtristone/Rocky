@@ -1,7 +1,9 @@
-package tristone.rocky;
+package ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import tristone.rocky.R;
 
 public class MainActivity extends AppCompatActivity {
 
