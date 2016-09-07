@@ -1,4 +1,4 @@
-package util;
+package tristone.rocky.util;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

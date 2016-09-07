@@ -1,4 +1,4 @@
-package ui.Base;
+package tristone.rocky.ui.Base;
 
 import android.app.Activity;
 

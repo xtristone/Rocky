@@ -1,4 +1,4 @@
-package util;
+package tristone.rocky.util;
 
 import android.content.Context;
 import android.util.TypedValue;
