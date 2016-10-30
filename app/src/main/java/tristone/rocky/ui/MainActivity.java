@@ -14,11 +14,15 @@ import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Func1;
 import rx.schedulers.Schedulers;
 import tristone.rocky.R;
+import tristone.rocky.widget.DraggableBall;
 
 public class MainActivity extends AppCompatActivity {
 
     @Bind(R.id.iv_test)
     ImageView ivTest;
+
+    @Bind(R.id.db_test)
+    DraggableBall dbTest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                         BitmapDrawable drawable=(BitmapDrawable) getResources().getDrawable(integer);
                         return drawable.getBitmap();
                     }
-                })
+    })
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Subscriber<Bitmap>() {
@@ -57,5 +61,7 @@ public class MainActivity extends AppCompatActivity {
                         ivTest.setImageBitmap(bitmap);
                     }
                 });
+
+
     }
 }
